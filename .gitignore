@@ -1,0 +1,11 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# IPUMS extracts -- redistribution is prohibited by IPUMS terms of use
+cps_*.dat
+cps_*.xml
+cps_*.csv
+cps_*.csv.gz
+cps_*.dat.gz
