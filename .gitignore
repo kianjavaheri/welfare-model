@@ -9,3 +9,11 @@ cps_*.xml
 cps_*.csv
 cps_*.csv.gz
 cps_*.dat.gz
+
+# ICPSR 37871 (Baby's First Years) restricted-use microdata.
+# ICPSR's terms of use prohibit redistribution, and DS0001 contains direct
+# identifiers (FIRSTNAMEA0/LASTNAMEA0). Never commit this directory.
+Data/
+
+# macOS
+.DS_Store

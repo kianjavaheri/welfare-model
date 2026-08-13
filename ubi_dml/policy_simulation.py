@@ -1,45 +1,27 @@
-"""Translate the fitted DML coefficient into a policy-relevant simulation.
+"""Report the BFY cash-transfer effect in policy-relevant terms.
 
-beta is dY/dT: the change in year-(T+1) wage income per marginal dollar of
-year-T unearned income. Since UBI proxy here is scaled in the same dollar
-units as UNEARNED_INCOME_1, a $6,000/year UBI's predicted effect on labor
-income is simply 6000 * beta (first-order / local approximation -- valid
-under LinearDML's constant-effect specification; CausalForestDML's CATEs
-give the distribution of that same local effect across the population
-instead of a single number).
+The prior CPS specification's treatment was a continuous dollar amount of
+unearned income, so the fitted beta was a *slope* (d wage / d dollar) that
+had to be multiplied by a hypothetical UBI grant size to become policy-
+relevant. TREATA0 here is a binary RCT arm assignment, not a continuous
+dollar shock -- beta already *is* the causal effect of "being assigned to
+the high-cash arm" on log hourly wages, so there is no marginal-dollar slope
+to rescale. The natural policy quantity is a level effect: the percentage
+change in wages the high-cash arm causes relative to the low-cash arm,
+exp(beta) - 1, which ATEResult.pct_wage_impact already carries.
 """
 from __future__ import annotations
 
-from dataclasses import dataclass
-
-from econml.dml import LinearDML
-
-UBI_ANNUAL_DOLLARS = 6000
+from ubi_dml.dml_pipeline import ATEResult
 
 
-@dataclass
-class PolicySimResult:
-    beta: float
-    stderr: float
-    ci_lower: float
-    ci_upper: float
-    predicted_wage_change: float
-    predicted_wage_change_ci: tuple[float, float]
-
-
-def simulate_ubi_effect(est: LinearDML, ubi_amount: float = UBI_ANNUAL_DOLLARS) -> PolicySimResult:
-    beta = float(est.effect(X=None)[0])
-    inf = est.effect_inference(X=None)
-    summary_df = inf.summary_frame()
-    stderr = float(summary_df["stderr"].iloc[0])
-    ci_lower = float(summary_df["ci_lower"].iloc[0])
-    ci_upper = float(summary_df["ci_upper"].iloc[0])
-
-    return PolicySimResult(
-        beta=beta,
-        stderr=stderr,
-        ci_lower=ci_lower,
-        ci_upper=ci_upper,
-        predicted_wage_change=ubi_amount * beta,
-        predicted_wage_change_ci=(ubi_amount * ci_lower, ubi_amount * ci_upper),
+def format_policy_report(ate_result: ATEResult, policy_name: str = "BFY high-cash arm") -> str:
+    return (
+        f"Average treatment effect on ln(hourly wage): {ate_result.beta:.4f} "
+        f"(stderr {ate_result.stderr:.4f}, "
+        f"95% CI [{ate_result.ci_lower:.4f}, {ate_result.ci_upper:.4f}])\n"
+        f"Percentage wage impact of the {policy_name}: "
+        f"{ate_result.pct_wage_impact:+.2f}% "
+        f"(95% CI [{ate_result.pct_wage_impact_ci[0]:+.2f}%, "
+        f"{ate_result.pct_wage_impact_ci[1]:+.2f}%])"
     )
