@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<rect width="1600" height="1000" fill="#fcfcfb"/>
+<g>
+<text x="100" y="90" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="2.6" fill="#898781">BABY&#8217;S FIRST YEARS RCT &#183; CAUSAL FOREST DML</text>
+<text x="100" y="163" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#0b0b0b">Who gains most from</text>
+<text x="100" y="225" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#0b0b0b">unconditional cash?</text>
+<text x="100" y="268" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#52514e">Per-mother effects on hourly wage, estimated by causal forest</text>
+<text x="1500" y="112" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="2.2" fill="#898781">AVERAGE TREATMENT EFFECT</text>
+<text x="1500" y="205" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="82" font-weight="700" fill="#0b0b0b">+14.7%</text>
+<text x="1500" y="250" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="23" fill="#52514e">95% CI &#8722;0.5% to +32.3%</text>
+<line x1="100" y1="300" x2="1500" y2="300" stroke="#e1e0d9" stroke-width="2"/>
+<line x1="150" y1="820.0" x2="1500" y2="820.0" stroke="#e1e0d9" stroke-width="2"/>
+<text x="132" y="827.0" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#898781">0</text>
+<line x1="150" y1="692.2" x2="1500" y2="692.2" stroke="#e1e0d9" stroke-width="2"/>
+<text x="132" y="699.2" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#898781">5</text>
+<line x1="150" y1="564.4" x2="1500" y2="564.4" stroke="#e1e0d9" stroke-width="2"/>
+<text x="132" y="571.4" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#898781">10</text>
+<line x1="150" y1="436.7" x2="1500" y2="436.7" stroke="#e1e0d9" stroke-width="2"/>
+<text x="132" y="443.7" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#898781">15</text>
+<path d="M 151.0 820 L 151.0 772.9 Q 151.0 768.9 155.0 768.9 L 199.0 768.9 Q 203.0 768.9 203.0 772.9 L 203.0 820 Z" fill="#2a78d6"/>
+<path d="M 205.0 820 L 205.0 721.8 Q 205.0 717.8 209.0 717.8 L 253.0 717.8 Q 257.0 717.8 257.0 721.8 L 257.0 820 Z" fill="#2a78d6"/>
+<path d="M 259.0 820 L 259.0 747.3 Q 259.0 743.3 263.0 743.3 L 307.0 743.3 Q 311.0 743.3 311.0 747.3 L 311.0 820 Z" fill="#2a78d6"/>
+<path d="M 313.0 820 L 313.0 721.8 Q 313.0 717.8 317.0 717.8 L 361.0 717.8 Q 365.0 717.8 365.0 721.8 L 365.0 820 Z" fill="#2a78d6"/>
+<path d="M 367.0 820 L 367.0 645.1 Q 367.0 641.1 371.0 641.1 L 415.0 641.1 Q 419.0 641.1 419.0 645.1 L 419.0 820 Z" fill="#2a78d6"/>
+<path d="M 421.0 820 L 421.0 670.7 Q 421.0 666.7 425.0 666.7 L 469.0 666.7 Q 473.0 666.7 473.0 670.7 L 473.0 820 Z" fill="#2a78d6"/>
+<path d="M 475.0 820 L 475.0 517.3 Q 475.0 513.3 479.0 513.3 L 523.0 513.3 Q 527.0 513.3 527.0 517.3 L 527.0 820 Z" fill="#2a78d6"/>
+<path d="M 529.0 820 L 529.0 542.9 Q 529.0 538.9 533.0 538.9 L 577.0 538.9 Q 581.0 538.9 581.0 542.9 L 581.0 820 Z" fill="#2a78d6"/>
+<path d="M 583.0 820 L 583.0 594.0 Q 583.0 590.0 587.0 590.0 L 631.0 590.0 Q 635.0 590.0 635.0 594.0 L 635.0 820 Z" fill="#2a78d6"/>
+<path d="M 637.0 820 L 637.0 645.1 Q 637.0 641.1 641.0 641.1 L 685.0 641.1 Q 689.0 641.1 689.0 645.1 L 689.0 820 Z" fill="#2a78d6"/>
+<path d="M 691.0 820 L 691.0 594.0 Q 691.0 590.0 695.0 590.0 L 739.0 590.0 Q 743.0 590.0 743.0 594.0 L 743.0 820 Z" fill="#2a78d6"/>
+<path d="M 745.0 820 L 745.0 466.2 Q 745.0 462.2 749.0 462.2 L 793.0 462.2 Q 797.0 462.2 797.0 466.2 L 797.0 820 Z" fill="#2a78d6"/>
+<path d="M 799.0 820 L 799.0 619.6 Q 799.0 615.6 803.0 615.6 L 847.0 615.6 Q 851.0 615.6 851.0 619.6 L 851.0 820 Z" fill="#2a78d6"/>
+<path d="M 853.0 820 L 853.0 645.1 Q 853.0 641.1 857.0 641.1 L 901.0 641.1 Q 905.0 641.1 905.0 645.1 L 905.0 820 Z" fill="#2a78d6"/>
+<path d="M 907.0 820 L 907.0 389.6 Q 907.0 385.6 911.0 385.6 L 955.0 385.6 Q 959.0 385.6 959.0 389.6 L 959.0 820 Z" fill="#2a78d6"/>
+<path d="M 961.0 820 L 961.0 568.4 Q 961.0 564.4 965.0 564.4 L 1009.0 564.4 Q 1013.0 564.4 1013.0 568.4 L 1013.0 820 Z" fill="#2a78d6"/>
+<path d="M 1015.0 820 L 1015.0 619.6 Q 1015.0 615.6 1019.0 615.6 L 1063.0 615.6 Q 1067.0 615.6 1067.0 619.6 L 1067.0 820 Z" fill="#2a78d6"/>
+<path d="M 1069.0 820 L 1069.0 645.1 Q 1069.0 641.1 1073.0 641.1 L 1117.0 641.1 Q 1121.0 641.1 1121.0 645.1 L 1121.0 820 Z" fill="#2a78d6"/>
+<path d="M 1123.0 820 L 1123.0 798.4 Q 1123.0 794.4 1127.0 794.4 L 1171.0 794.4 Q 1175.0 794.4 1175.0 798.4 L 1175.0 820 Z" fill="#2a78d6"/>
+<path d="M 1177.0 820 L 1177.0 772.9 Q 1177.0 768.9 1181.0 768.9 L 1225.0 768.9 Q 1229.0 768.9 1229.0 772.9 L 1229.0 820 Z" fill="#2a78d6"/>
+<path d="M 1231.0 820 L 1231.0 721.8 Q 1231.0 717.8 1235.0 717.8 L 1279.0 717.8 Q 1283.0 717.8 1283.0 721.8 L 1283.0 820 Z" fill="#2a78d6"/>
+<path d="M 1285.0 820 L 1285.0 721.8 Q 1285.0 717.8 1289.0 717.8 L 1333.0 717.8 Q 1337.0 717.8 1337.0 721.8 L 1337.0 820 Z" fill="#2a78d6"/>
+<path d="M 1339.0 820 L 1339.0 772.9 Q 1339.0 768.9 1343.0 768.9 L 1387.0 768.9 Q 1391.0 768.9 1391.0 772.9 L 1391.0 820 Z" fill="#2a78d6"/>
+<path d="M 1393.0 820 L 1393.0 798.4 Q 1393.0 794.4 1397.0 794.4 L 1441.0 794.4 Q 1445.0 794.4 1445.0 798.4 L 1445.0 820 Z" fill="#2a78d6"/>
+<path d="M 1447.0 820 L 1447.0 798.4 Q 1447.0 794.4 1451.0 794.4 L 1495.0 794.4 Q 1499.0 794.4 1499.0 798.4 L 1499.0 820 Z" fill="#2a78d6"/>
+<line x1="150" y1="820" x2="1500" y2="820" stroke="#c3c2b7" stroke-width="2.5"/>
+<line x1="754.1" y1="356" x2="754.1" y2="820" stroke="#eb6834" stroke-width="4" stroke-dasharray="11 8"/>
+<text x="754.1" y="344" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#52514e">Average  +14.7%</text>
+<text x="222.8" y="860" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#898781">5%</text>
+<text x="496.4" y="860" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#898781">10%</text>
+<text x="770.0" y="860" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#898781">15%</text>
+<text x="1043.6" y="860" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#898781">20%</text>
+<text x="1317.2" y="860" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#898781">25%</text>
+<text x="825.0" y="908" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#52514e">Estimated effect on hourly wage (%)</text>
+<text x="132" y="346" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#898781">mothers</text>
+<text x="100" y="947" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#52514e">Each bar counts mothers by their own estimated effect. n = 160, all estimates positive &#8212; but the interval on the average includes zero.</text>
+<text x="100" y="978" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#898781">Read the spread as suggestive of heterogeneity, not as per-mother predictions.</text>
+</g>
+</svg>
