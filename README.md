@@ -295,7 +295,7 @@ CATE summary across 160 mothers (percentage wage impact):
   mean=14.97%  median=15.03%  std=5.25%  [3.67%, 28.34%]
 ```
 
-![CATE histogram](cate_histogram.png)
+![CausalForestDML: distribution of per-mother wage-impact estimates](figures/fig6_cate_distribution.png)
 
 Weighting for both non-response channels (not just earnings-question
 non-response) moves the `LinearDML` ATE from +13.92% (earnings-only
